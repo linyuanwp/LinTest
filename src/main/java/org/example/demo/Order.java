@@ -4,9 +4,11 @@ import java.util.Objects;
 
 public class Order {
     private final int id;
+    private final String description;
 
-    public Order(int id) {
+    public Order(int id, String description) {
         this.id = id;
+        this.description = description;
     }
 
     @Override
@@ -28,4 +30,9 @@ public class Order {
     public int hashCode() {
         return Objects.hash(id);
     }
+
+    public String getDescription() {
+        return description;
+    }
+
 }

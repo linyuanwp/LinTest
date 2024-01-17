@@ -8,8 +8,10 @@ class OrderTest {
 
     @Test
     public void shouldBeAbleToCreateANewOrder() {
-        Order order = new Order(23);
+        String desc = "Description";
+        Order order = new Order(23, desc);
         assertNotNull(order);
+        assertEquals(desc, order.getDescription());
 
     }
 
